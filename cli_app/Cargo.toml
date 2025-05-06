@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+axum = "0.7.4"
 clap = "4"
 anyhow = "1"
 config = "0.14"
