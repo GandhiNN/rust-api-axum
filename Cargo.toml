@@ -1,0 +1,14 @@
+[package]
+name = "rust-api-axum"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[workspace]
+members = [
+    "hello_main",
+    "useful_things/*",
+    "cli_app"
+]
+resolver = "2"
