@@ -264,6 +264,7 @@ dependencies = [
  "config",
  "dotenv",
  "serde",
+ "tokio",
 ]
 
 [[package]]

@@ -10,3 +10,4 @@ anyhow = "1"
 config = "0.14"
 dotenv = "0.15"
 serde = { version = "1", features = ["derive"] }
+tokio = { version = "1.35.1", features = ["full"] }
