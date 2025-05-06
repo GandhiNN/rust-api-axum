@@ -8,8 +8,7 @@ pub fn main() -> anyhow::Result<()> {
         Arg::new("config")
             .short('c')
             .long("config")
-            .help("Configuration file location")
-            .default_value("config.json"),
+            .help("Configuration file location"),
     );
     command = commands::configure(command);
 
@@ -17,8 +16,8 @@ pub fn main() -> anyhow::Result<()> {
 
     let config_location = matches
         .get_one::<String>("config")
-        .map(|s| s.as_str())
-        .unwrap_or("");
+        .map(|s| Some(s.as_str()))
+        .unwrap_or(None);
 
     let settings = settings::Settings::new(config_location, "APP")?;
 
