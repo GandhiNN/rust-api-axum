@@ -1,7 +1,9 @@
 use clap::{Arg, Command};
 use cli_app::{commands, settings};
+use dotenv::dotenv;
 
 pub fn main() -> anyhow::Result<()> {
+    dotenv().ok();
     let mut command = Command::new("Sample CLI application").arg(
         Arg::new("config")
             .short('c')
