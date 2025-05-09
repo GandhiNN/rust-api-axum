@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 axum = "0.7.4"
+arc_swap = "1.7.1"
 clap = "4"
 anyhow = "1"
 config = "0.14"
